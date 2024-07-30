@@ -10,12 +10,7 @@ import { InvoicesComponent } from '../invoices/invoices.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements AfterViewInit {
-
-  ngAfterViewInit(): void {
-    const headerContainer = document.querySelector('header');
-    console.log(headerContainer?.clientHeight);
-  }
+export class HomeComponent {
 
 }
 

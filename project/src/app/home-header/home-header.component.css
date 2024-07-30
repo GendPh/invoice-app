@@ -21,6 +21,7 @@
     display: flex;
     gap: 18px;
     align-items: center;
+
   }
 
   #filter {
@@ -141,26 +142,5 @@
     }
   }
 
-  #plus-invoice {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background-color: #7c5dfa;
-    border-radius: 24px;
-    color: white;
-    font-size: 15px;
-    line-height: 15px;
-    letter-spacing: -0.25px;
-    font-weight: bold;
-    padding: 6px;
-    padding-right: 15px;
-    span {
-      background-color: #ffffff;
-      padding: 11px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
+  
 }

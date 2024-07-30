@@ -10,12 +10,14 @@
   --body-background: #f8f8fb;
   --header-background: #373b53;
   --menu-toggle-btn-img: url('assets/icon-moon.svg');
-  
+
   --text-color: #0c0e16;
   --text-color-secondary: #888eb0;
   --filter-background: #ffffff;
   --filter-input-background: #dfe3fa;
-  
+
+  --new-invoice-background: #ffffff;
+
   --color-transition: 0.3s linear;
 }
 
@@ -27,7 +29,7 @@
   --text-color-secondary: #dfe3fa;
 
   --filter-background: #252945;
-  --filter-input-background: #1E2139;
+  --filter-input-background: #1e2139;
 }
 
 body {
@@ -44,4 +46,9 @@ button {
   border: none;
   background-color: transparent;
   outline: none;
+  cursor: pointer;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
