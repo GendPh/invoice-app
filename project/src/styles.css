@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-background: #f8f8fb;
+  --header-background: #373b53;
+  --menu-toggle-btn-img: url('assets/icon-moon.svg');
+  
+  --text-color: #0c0e16;
+  --text-color-secondary: #888eb0;
+  --filter-background: #ffffff;
+  --filter-input-background: #dfe3fa;
+  
+  --color-transition: 0.3s linear;
+}
+
+[data-theme='dark'] {
+  --body-background: #141625;
+  --menu-toggle-btn-img: url('assets/icon-sun.svg');
+
+  --text-color: #ffffff;
+  --text-color-secondary: #dfe3fa;
+
+  --filter-background: #252945;
+  --filter-input-background: #1E2139;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  background-color: var(--body-background);
+  transition: background-color var(--color-transition);
+}
+
+main {
+  padding: /* 32px 24px */ 2rem 1.5rem;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}

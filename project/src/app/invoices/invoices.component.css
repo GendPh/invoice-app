@@ -1,0 +1,28 @@
+#empty-invoices {
+  margin-top: 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  color: var(--text-color);
+  transition: color var(--color-transition);
+
+  h2 {
+    font-size: 24px;
+    letter-spacing: -0.75px;
+    font-weight: bold;
+    margin-bottom: 23px;
+  }
+  p {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.1px;
+    font-weight: 500;
+    color: var(--text-color-secondary);
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
