@@ -21,32 +21,71 @@
 
   <h2>New Invoice</h2>
 
-  <h3>Bill From</h3>
 
   <form method="post">
+
+    <h3>Bill From</h3>
+
     <div class="form-input">
-      <label for="street">Street Address</label>
-      <input type="text" id="street" name="street" placeholder="Street Address">
+      <label class="text-sm" for="street">Street Address</label>
+      <input class="text-m" type="text" id="street" name="street" placeholder="Street Address">
     </div>
 
-    <div>
+    <div class="city-code">
       <div class="form-input">
-        <label for="city">City</label>
-        <input type="text" id="city" name="city" placeholder="London">
+        <label class="text-sm" for="city">City</label>
+        <input class="text-m" type="text" id="city" name="city" placeholder="London">
       </div>
 
       <div class="form-input">
-        <label for="post-code">Post Code</label>
-        <input type="text" id="post-code" name="post-code" placeholder="Post Code">
+        <label class="text-sm" for="post-code">Post Code</label>
+        <input class="text-m" type="text" id="post-code" name="post-code" placeholder="Post Code">
       </div>
     </div>
 
     <div class="form-input">
-      <label for="country">Country</label>
-      <input type="text" id="country" name="country" placeholder="Country">
+      <label class="text-sm" for="country">Country</label>
+      <input class="text-m" type="text" id="country" name="country" placeholder="Country">
     </div>
 
+    <h3>Bill To</h3>
 
+    <div class="form-input">
+      <label class="text-sm" for="client">Client's Name</label>
+      <input class="text-m" type="text" id="client" name="client" placeholder="Client's Name">
+    </div>
+
+    <div class="form-input">
+      <label class="text-sm" for="email">Client's Email</label>
+      <input class="text-m" type="email" id="email" name="email" placeholder="Client's Email">
+    </div>
+
+    <div class="form-input">
+      <label class="text-sm" for="street-to">Street Address</label>
+      <input class="text-m" type="text" id="street-to" name="street-to" placeholder="Street Address">
+    </div>
+
+    <div class="city-code">
+      <div class="form-input">
+        <label class="text-sm" for="city-to">City</label>
+        <input class="text-m" type="text" id="city-to" name="city-to" placeholder="London">
+      </div>
+
+      <div class="form-input">
+        <label class="text-sm" for="post-code-to">Post Code</label>
+        <input class="text-m" type="text" id="post-code-to" name="post-code-to" placeholder="Post Code">
+      </div>
+    </div>
+
+    <div class="form-input">
+      <label class="text-sm" for="country-to">Country</label>
+      <input class="text-m" type="text" id="country-to" name="country-to" placeholder="Country">
+    </div>
+
+    <div class="form-input">
+      <label class="text-sm" for="date">Invoice Date</label>
+      <input class="text-m" type="date" value="2017-06-01" id="date" name="date" >
+    </div>
 
   </form>
 </div>

@@ -27,7 +27,7 @@
   height: 100%;
   background-color: var(--new-invoice-background);
   overflow-y: scroll;
-  padding: 33px 24px;
+  padding: 33px 24px 100px;
   color: var(--text-color);
   transition: color var(--color-transition);
   /* transform: translateX(-100%); */
@@ -58,5 +58,26 @@
     line-height: 15px;
     color: #7c5dfa;
     margin-bottom: 24px;
+  }
+
+  .city-code {
+    display: flex;
+    gap: 23px;
+  }
+
+  .form-input {
+    width: 100%;
+    label {
+      display: block;
+      color: #7e88c3;
+      margin-bottom: 9px;
+    }
+    input {
+      border: 1px solid #dfe3fa;
+      width: 100%;
+      padding: 20px 18px;
+      margin-bottom: 25px;
+      border-radius: 4px;
+    }
   }
 }
