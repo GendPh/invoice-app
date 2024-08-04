@@ -13,13 +13,10 @@
   --filter-background: #ffffff;
   --filter-input-background: #dfe3fa;
 
-  --new-invoice-background: #ffffff;
-
   --color-transition: 0.3s linear;
 }
 
 [data-theme='dark'] {
-  
   --menu-toggle-btn-img: url('assets/icon-sun.svg');
 
   --text-color: #ffffff;
@@ -53,8 +50,55 @@ main {
   letter-spacing: -0.25px;
   line-height: 15px;
   font-weight: bold;
-  
+
   transition: color var(--color-transition);
 
   @apply text-text-light dark:text-text-dark;
+}
+
+@layer components {
+  .primary-text-color {
+    transition: color var(--color-transition);
+    @apply text-text-light dark:text-text-dark;
+  }
+
+
+  .heading-l{
+    font-weight: bold;
+    @apply text-[1.5rem] md:text-[2.25rem] font-bold tracking-[-0.0375rem] md:tracking-[-0.062rem] md:leading-[2.063rem]; 
+
+  }
+  .heading-m{
+    font-size: 24px;
+    line-height: 22px;
+    letter-spacing: -0.75px;
+    font-weight: bold;
+  }
+  .heading-s{
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    font-weight: bold;
+  }
+  .heading-s-variante{
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    font-weight: bold;
+  }
+
+
+  .text-body{
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    font-weight: 500;
+  }
+  .text-body-variante{
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    font-weight: 500;
+  }
+
 }

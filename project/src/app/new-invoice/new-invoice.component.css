@@ -23,21 +23,17 @@
 }
 
 #new-invoice-container {
-  position: fixed;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--new-invoice-background);
-  overflow-y: scroll;
   padding: 33px 24px 100px;
-  color: var(--text-color);
-  transition: color var(--color-transition);
-  transform: translateX(-100%);
+  
+
+  transition: transform 0.3s ease-in-out, background-color var(--color-transition);
+  
+  &:not(.visible){
+    transform: translateX(-100%);
+  }
 
   #back-btn {
-    display: flex;
-    align-items: center;
-    gap: 23px;
+
     font-size: 15px;
     line-height: 15px;
     letter-spacing: -0.25px;

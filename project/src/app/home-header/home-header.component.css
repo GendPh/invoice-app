@@ -1,56 +1,7 @@
 #home-header {
-  display: flex;
-  justify-content: space-between;
 
-  color: var(--text-color);
-  transition: color var(--color-transition);
-  h3 {
-    font-weight: bold;
-    font-size: /* 24px */ 1.5rem;
-    letter-spacing: /* -0.75px */ -0.0375rem;
-  }
-  h4 {
-    color: var(--text-color-secondary);
-    font-weight: 500;
-    font-size: /* 13px */ 0.8125rem;
-    letter-spacing: /* -0.1px */ -0.00625rem;
-    line-height: /* 15px */ 0.9375rem;
-  }
-
-  article:last-of-type {
-    display: flex;
-    gap: 18px;
-    align-items: center;
-
-  }
 
   #filter {
-    position: relative;
-    display: flex;
-    align-items: center;
-
-    .text {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      cursor: pointer;
-      p {
-        font-size: /* 15px */ 0.9375rem;
-        line-height: /* 15px */ 0.9375rem;
-        letter-spacing: /* -0.25px */ -0.015625rem;
-        font-weight: bold;
-        span {
-          display: none;
-        }
-      }
-
-      button {
-        transform: rotate(0deg);
-        transition: transform var(--color-transition);
-      }
-    }
-
     &:hover {
       #filter-drop-down {
         pointer-events: all;
@@ -141,6 +92,4 @@
       }
     }
   }
-
-  
 }

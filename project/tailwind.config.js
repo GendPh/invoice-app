@@ -21,6 +21,10 @@ module.exports = {
           light:"#f8f8fb",
           dark:"#141625",
           header: "#373b53",
+          "new-invoice":{
+            light:"#ffffff",
+            dark:"#141625"
+          }
         },
 
       }
