@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
 
-  public theme: string = 'light';
+  public theme: string | null = null;
 
   constructor(private themeService: ThemeService) {
     this.themeService.theme$.subscribe((theme) => {

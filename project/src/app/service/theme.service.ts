@@ -8,17 +8,24 @@ const html = document.querySelector('html');
 })
 export class ThemeService {
 
-  private theme: BehaviorSubject<string> = new BehaviorSubject('light');
-  theme$: Observable<string> = this.theme.asObservable();
+  private theme: BehaviorSubject<string | null> = new BehaviorSubject<string | null>(' ');
+  theme$: Observable<string | null> = this.theme.asObservable();
+  
   constructor() {
-    this.theme.subscribe((theme) => {
-      html?.setAttribute('data-theme', theme);
-    });
+    this.theme$.subscribe((theme) => {
+      html?.setAttribute('data-theme', theme!);
+    } );
   }
 
 
   toggleTheme() {
-    this.theme.next(this.theme.value === 'light' ? 'dark' : 'light');
+    if(html?.classList.contains('dark')) {
+      html?.classList.remove('dark'); 
+      this.theme.next('light');
+    }else {
+      html?.classList.add('dark');
+      this.theme.next('dark');
+    }
   }
 
 }

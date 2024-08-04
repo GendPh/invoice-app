@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import {  Component } from '@angular/core';
 import { HomeHeaderComponent } from '../home-header/home-header.component';
 import { InvoicesComponent } from '../invoices/invoices.component';
 

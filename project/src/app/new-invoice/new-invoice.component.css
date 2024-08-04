@@ -11,6 +11,7 @@
   font-weight: bold;
   padding: 6px;
   padding-right: 15px;
+  
   span {
     background-color: #ffffff;
     padding: 11px;
@@ -20,6 +21,7 @@
     align-items: center;
   }
 }
+
 #new-invoice-container {
   position: fixed;
   left: 0;
@@ -30,7 +32,7 @@
   padding: 33px 24px 100px;
   color: var(--text-color);
   transition: color var(--color-transition);
-  /* transform: translateX(-100%); */
+  transform: translateX(-100%);
 
   #back-btn {
     display: flex;

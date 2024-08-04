@@ -1,4 +1,4 @@
-<header>
+<header class="flex justify-between bg-background-header">
 
   <figure class="logo">
     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="26">
@@ -8,15 +8,15 @@
   </figure>
 
 
-  <div class="header-menus">
-    <div class="button-container">
+  <div class="header-menus flex">
+    <div class="button-container flex items-center px-5">
 
-      <button (click)="toggleTheme()"></button>
+      <button (click)="toggleTheme()" class="block w-5 h-5"></button>
     </div>
 
-    <div class="avatar">
-      <figure>
-        <img src="../../assets/image-avatar.jpg" alt="avatar">
+    <div class="flex items-center border-l border-[#494e6e] px-5">
+      <figure class="block w-8 h-8 rounded-full">
+        <img src="../../assets/image-avatar.jpg" alt="avatar" class="rounded-full w-full h-full">
       </figure>
     </div>
   </div>
