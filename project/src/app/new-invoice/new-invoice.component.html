@@ -9,8 +9,9 @@
 </button>
 
 
-<div id="new-invoice-container" [ngClass]="{'visible': isVisible}" class="fixed left-0 overflow-y-scroll w-full h-full bg-background-new-invoice-light dark:bg-background-new-invoice-dark primary-text-color" >
-  
+<div id="new-invoice-container" [ngClass]="{'visible': !isVisible}"
+  class="fixed left-0 overflow-y-scroll w-full h-full bg-background-new-invoice-light dark:bg-background-new-invoice-dark primary-text-color">
+
   <button id="back-btn" (click)="Hidden()" class="flex gap-[23px]">
     <svg width="7" height="10" xmlns="http://www.w3.org/2000/svg">
       <path d="M6.342.886L2.114 5.114l4.228 4.228" stroke="#9277FF" stroke-width="2" fill="none" fill-rule="evenodd" />
@@ -25,7 +26,7 @@
 
   <form method="post">
 
-    <h3>Bill From</h3>
+    <!--  <h3>Bill From</h3>
 
     <div class="form-input">
       <label class="text-sm" for="street">Street Address</label>
@@ -86,7 +87,33 @@
     <div class="form-input">
       <label class="text-sm" for="date">Invoice Date</label>
       <input class="text-m" type="date" value="2017-06-01" id="date" name="date" >
+    </div> -->
+
+    <div class="form-input">
+      <label for="terms">Payment Terms</label>
+
+      <div class="select-terms flex items-center justify-between relative group text-m ">
+        <p>Net 30 Days</p>
+
+        <button class="cursor-pointer group-hover:rotate-180 transition-all duration-300 ">
+          <svg width="11" height="7" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1l4.228 4.228L9.456 1" stroke="#7C5DFA" stroke-width="2" fill="none" fill-rule="evenodd" />
+          </svg>
+        </button>
+
+
+        <div class="rounded-lg absolute left-[-1px] right-[-1px] top-full pt-2 pointer-events-none opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 bg-transparent" id="terms-dropdown">
+          <p class="rounded-t-lg">Net 1 Day</p>
+          <p class="border-y border-[#DFE3FA]">Net 7 Day</p>
+          <p class="border-b border-[#DFE3FA] ">Net 14 Day</p>
+          <p class="rounded-b-lg">Net 30 Day</p>
+        </div>
+      </div>
     </div>
 
+    <div class="form-input">
+      <label for="description">Project Description</label>
+      <input class="text-m" type="text" id="description" name="description" placeholder="Project Description">
+    </div>
   </form>
 </div>

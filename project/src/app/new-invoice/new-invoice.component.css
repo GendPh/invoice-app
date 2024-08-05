@@ -11,7 +11,7 @@
   font-weight: bold;
   padding: 6px;
   padding-right: 15px;
-  
+
   span {
     background-color: #ffffff;
     padding: 11px;
@@ -24,16 +24,15 @@
 
 #new-invoice-container {
   padding: 33px 24px 100px;
-  
 
-  transition: transform 0.3s ease-in-out, background-color var(--color-transition);
-  
-  &:not(.visible){
+  transition: transform 0.3s ease-in-out,
+    background-color var(--color-transition);
+
+  &:not(.visible) {
     transform: translateX(-100%);
   }
 
   #back-btn {
-
     font-size: 15px;
     line-height: 15px;
     letter-spacing: -0.25px;
@@ -70,12 +69,32 @@
       color: #7e88c3;
       margin-bottom: 9px;
     }
-    input {
+
+
+
+    input,
+    .select-terms {
       border: 1px solid #dfe3fa;
       width: 100%;
       padding: 20px 18px;
       margin-bottom: 25px;
       border-radius: 4px;
     }
+
+    input{
+      @apply bg-background-input-light dark:bg-background-input-dark transition-colors duration-300;
+    }
+
+    .select-terms{
+      #terms-dropdown{
+        filter: drop-shadow(0px 10px 20px rgba(72, 84, 159, 0.25));
+        
+        p{
+          padding: 15px 24px;
+          @apply bg-background-input-light dark:bg-background-input-dark cursor-pointer;
+        }
+      }
+    }
+    
   }
 }

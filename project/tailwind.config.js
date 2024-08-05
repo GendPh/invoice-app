@@ -24,7 +24,11 @@ module.exports = {
           "new-invoice":{
             light:"#ffffff",
             dark:"#141625"
-          }
+          },
+          input:{
+            light:"#ffffff",
+            dark:"#252945"
+          },
         },
 
       }
